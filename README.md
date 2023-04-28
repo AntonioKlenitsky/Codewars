@@ -1,2 +1,2 @@
-# Codewars
+# codewars
 Codewars.Exercises
