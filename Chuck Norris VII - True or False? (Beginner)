@@ -17,3 +17,12 @@ function ifChuckSaysSo(){
   };
   return ifChuckSaysSo;
 }
+// другие варианты решений
+function ifChuckSaysSo() {
+  if (true === true) {
+    return !true;
+  } else {
+    return true
+  }
+}
+function ifChuckSaysSo(){return !true;}
