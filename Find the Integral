@@ -16,3 +16,4 @@ Examples
 40, 3  -->  "10x^4"
 90, 2  -->  "30x^3"
 //решение
+integrate=(coefficient, exponent)=>`${coefficient/(exponent+1)}x^${exponent + 1}`
