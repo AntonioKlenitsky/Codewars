@@ -15,5 +15,8 @@ Examples
 20, 1  -->  "10x^2"
 40, 3  -->  "10x^4"
 90, 2  -->  "30x^3"
+//сайт с инфой
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
 //решение
 integrate=(coefficient, exponent)=>`${coefficient/(exponent+1)}x^${exponent + 1}`
