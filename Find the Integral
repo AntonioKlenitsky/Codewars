@@ -20,3 +20,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
 
 //решение
 integrate=(coefficient, exponent)=>`${coefficient/(exponent+1)}x^${exponent + 1}`
+// any solutions
+
+const integrate = (coefficient, exponent) => {
+  return coefficient / (exponent + 1) + 'x^' + (exponent + 1);
+}
+function integrate(coefficient, exponent) {
+  return `${coefficient/(exponent+1)}x^${exponent+1}`
+}
