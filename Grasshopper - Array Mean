@@ -22,3 +22,10 @@ var findAverage = function (nums) {
       
     } return sum/nums.length;
   }
+// other solutions
+const findAverage = nums => nums.reduce((a, b) => a + b) / nums.length;
+
+
+var findAverage = function(nums){
+    return nums.reduce((a, b) => a + b, 0) / nums.length;
+  }
