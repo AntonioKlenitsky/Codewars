@@ -6,7 +6,7 @@ Your code will show Full name of the neighbor and the truncated version of the n
 
 Ваш код покажет полное имя соседа и сокращенную версию имени в виде массива. Если количество символов в имени меньше или равно двум, он вернет массив, содержащий только имя как есть"*/
 
-/solutions
+//solutions
 
 function whoIsPaying(name) {
    if (name.length>2){
