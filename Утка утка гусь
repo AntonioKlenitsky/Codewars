@@ -13,3 +13,35 @@ duck_duck_goose([$a, $b, $c, $d], 5); // => $a["name"]
 duck_duck_goose([$a, $b, $c, $d], 4); // => $d["name"] */
 
 
+/solutions
+function duckDuckGoose(players, goose) {
+  
+  return players[(goose-1)%players.length].name
+}
+
+function duckDuckGoose(players, goose) {
+  let circle = goose;
+  while(players.length < circle) {
+    circle -= players.length
+  }
+  return players[circle - 1 ].name
+}
+
+function duckDuckGoose(players, goose) {
+  var playerArray = players;
+  var count = goose;
+  
+while(count > 0)
+  {
+   for(i=0;i<playerArray.length;i++)
+   {
+    if(count == 1)
+    {
+    return playerArray[i].name;
+    }
+    count--;
+   }
+  }
+}
+
+const duckDuckGoose = (ps, g) => ps[(g - 1) % ps.length].name;
