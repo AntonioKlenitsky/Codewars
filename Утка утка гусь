@@ -1,0 +1,15 @@
+/*Цель игры «Утка, утка, гусь» — ходить по кругу , постукивая по голове каждого игрока, пока не будет выбран один.
+
+Задача: Учитывая массив объектов Player (массив ассоциативных массивов в PHP) и индекс ( отсчет от 1 ), вернуть nameвыбранный Player ( nameэто свойство Playerобъектов, например Player.name)
+
+Пример:
+
+duck_duck_goose([a, b, c, d], 1) should return a.name
+duck_duck_goose([a, b, c, d], 5) should return a.name
+duck_duck_goose([a, b, c, d], 4) should return d.name
+// PHP only
+duck_duck_goose([$a, $b, $c, $d], 1); // => $a["name"]
+duck_duck_goose([$a, $b, $c, $d], 5); // => $a["name"]
+duck_duck_goose([$a, $b, $c, $d], 4); // => $d["name"] */
+
+
