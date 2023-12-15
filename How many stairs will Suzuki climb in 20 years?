@@ -30,4 +30,18 @@ sunday = [6737, 7244, 5776, 9826, 7057, 9247, 5842, 5484, 6543, 5153, 6832, 8274
 Ваша функция должна вернуть оценку количества пройденных лестниц за 20 лет, используя приведенную выше формулу.//
 
 //solutions
+function stairsIn20(s){
+ 
+  return SUKA=20*(s[0].reduce((sum, current) => sum + current, 0)+
+    s[1].reduce((sum, current) => sum + current, 0)+
+    s[2].reduce((sum, current) => sum + current, 0)+
+    s[3].reduce((sum, current) => sum + current, 0)+
+    s[4].reduce((sum, current) => sum + current, 0)+
+    s[5].reduce((sum, current) => sum + current, 0)+
+    s[6].reduce((sum, current) => sum + current, 0));
+}
 
+//best practice
+function stairsIn20(a) {
+  return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
+}
