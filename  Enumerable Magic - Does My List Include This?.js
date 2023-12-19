@@ -8,3 +8,7 @@ function include(arr, item){
     }
     return false;
   }
+  //best practice 
+  function include(arr, item){
+    return arr.includes(item);
+  }
