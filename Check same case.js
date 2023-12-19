@@ -13,3 +13,16 @@ Examples
 'B' and 'g' returns 0
 
 '0' and '?' returns -1 */
+//solution
+
+function sameCase(a, b) {
+    if (!/^[A-Za-z]$/.test(a) || !/^[A-Za-z]$/.test(b)) {
+      return -1
+    } else if (
+      (/^[A-Z]$/.test(a) && /^[A-Z]$/.test(b)) ||    (/^[a-z]$/.test(a) && /^[a-z]$/.test(b))
+    ) {
+      return 1
+    } else {
+      return 0
+    }
+  }
