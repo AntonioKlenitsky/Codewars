@@ -5,4 +5,8 @@ radius- радиус бутылки (всегда > 0);
 bottleLength- общая длина бутылки (всегда > 0);
 rimLength- длина от верха бутылки до кирпича (всегда < bottleLength);
 И возвратный объем ледяного кирпича, который фокуснику удалось поместить в бутылку.*/
+//solution 
+function iceBrickVolume(radius, bottleLength, rimLength) {
+  return radius*2*radius*(bottleLength-rimLength);
+}
 
