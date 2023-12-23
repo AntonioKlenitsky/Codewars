@@ -12,3 +12,5 @@ function ensureQuestion(s) {
     return s;
   } return s+"?";
 }
+//another solution 
+const ensureQuestion = s => s.endsWith('?') ? s : s+'?'
