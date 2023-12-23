@@ -6,3 +6,23 @@
 * "1234!_ "     -> "11223344!!__  "
 Удачи!*/
 
+//solution 
+function doubleChar(str) {
+  let doubleStr= '';
+  for (const char of str){
+    doubleStr+= char + char;
+  }
+  return doubleStr;
+  }
+  // other solutions
+
+const doubleChar = (str) => str.split("").map(c => c + c).join("");
+
+function doubleChar(str) {
+	var word = '';
+  for (var i = 0; i < str.length; i++){
+  	word = word + str[i] + str[i];
+  };
+  return word;
+};
+
