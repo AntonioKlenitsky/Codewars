@@ -19,4 +19,20 @@ countArara(8) 'adak adak adak adak'
 countArara 3 // -> "adak anane"
 
 countArara 8 // -> "adak adak adak adak"
+//solution
+function countArara(n) {
+  const even2='adak ';
+  const odd1='anane';
+  const evenodd=even2.repeat((n/2)-0.5)+odd1;
+ if (n===1){
+    return odd1;
+  } else if (n===2){
+  return even2;
+  } else if (n%2 == 0){
+    return even2.repeat((n-2)*0.5)+even2.trim();
+  } 
+    else if (n%2 !== 0) {
+    return evenodd;
+ }
+}
 
